@@ -1,7 +1,7 @@
 function display() {
     const getInput = document.querySelector('.getName');
     const getName = getInput.value;
-    
+    console.log(getName);
 
     const getDateTime = new Date();
     const dateFormat = getDateTime.toLocaleString('en-us', {
@@ -11,9 +11,22 @@ function display() {
         month:"long"});
     
     const timeFormat = getDateTime.toLocaleTimeString();
-
-    document.querySelector('.display')
-        .innerHTML= `Hello ${getName}! Today is ${dateFormat} and the time now is ${timeFormat}`;
     
-    getInput.value = '';
+   if (getName === '') {
+        document.querySelector('.js-error')
+            .innerHTML= `Please enter your name to proceed`;
+        
+   } else {
+        document.querySelector('.js-error')
+            .innerHTML='';
+
+        document.querySelector('.display')
+            .innerHTML= `Hello ${getName}! Today is ${dateFormat} and the time now is ${timeFormat}`;
+        
+        getInput.value = '';
+   }
+
+    
+
+    
 }
