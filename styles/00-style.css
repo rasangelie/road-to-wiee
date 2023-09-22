@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+.submit {
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 12px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.js-input {
+    padding: 10px;
+    font-size: 15px;
+}
