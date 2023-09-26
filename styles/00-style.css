@@ -27,3 +27,8 @@ h1 {
     font-size: 12px;
     color: red;
 }
+
+.input-error {
+    border: solid 1px;
+    border-color: red;
+}
